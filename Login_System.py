@@ -17,7 +17,7 @@ def register_user():
 def register():
 	global screen1
 	screen1 = Toplevel(screen)
-	screen1.geometry("2060x1080")
+	screen1.geometry("320x280")
 	screen1.title("register")
 	global username 
 	global password
@@ -60,7 +60,7 @@ def login():
 	password_verify = StringVar()
 
 	screen2 = Toplevel(screen)
-	screen2.geometry("2060x1080")
+	screen2.geometry("320x280")
 	screen2.title("login")
 	Label(screen2,text="Please enter the information for login ",height= '2',width='30').pack()
 	Label(screen2,text="",height= '2',width='30').pack()
@@ -83,7 +83,7 @@ def login():
 def main_screen():
 	global screen
 	screen = Tk()
-	screen.geometry("2080x1080")
+	screen.geometry("320x280")
 	Label(text="test login").pack()
 	Label(text="",height= '2',width='30')
 	Button(text="Login ",height= '2',width='30',bg="blue",command = login).pack()
